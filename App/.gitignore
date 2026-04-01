@@ -1,0 +1,19 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+
+# Large binary client files (tracked separately in their own repos)
+01-NeverMisleads/Clients/luxx-barbershop/dist.zip
+01-NeverMisleads/Clients/luxx-barbershop/luxx-deploy.zip
+01-NeverMisleads/Clients/luxx-barbershop/node_modules/
+01-NeverMisleads/Clients/nexus-mission-critical/node_modules/
+01-NeverMisleads/Clients/nexus-mission-critical/app/node_modules/
+
+# Sensitive config
+00-Core/CONFIG.json

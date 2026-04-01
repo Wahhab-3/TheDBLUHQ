@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nexus Mission Critical | Enterprise Data Center Construction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0db9f2",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0a0f11",
+                        "accent-dark": "#162529",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(22, 37, 41, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(13, 185, 242, 0.2);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10, 15, 17, 0.3) 0%, rgba(10, 15, 17, 0.9) 100%);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 border-b border-primary/10 bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-primary">
+                    <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h1 class="text-xl font-bold tracking-tight text-slate-100">NEXUS <span
+                        class="text-primary/80 font-light">MISSION CRITICAL</span></h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#expertise">Expertise</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+                <a class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20"
+                    href="#contact">
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 hero-gradient z-10"></div>
+            <img alt="Futuristic data center server room" class="w-full h-full object-cover"
+                data-alt="Cinematic wide shot of futuristic data center servers"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3_VfjAbHl_qWThOuP1GYGSYfZRZlshHQGCVzi0ClU4kmvIlIzggNFTehpsR4AaaP4COvQT1iZMd3inZQBK4BNkP1yAg7fwHQneov8Ee6TvGYMw2LM0-sTO2oBdrLUs6GXg4OFGVRYFOIyewaQNjE9rR53scdILECC-075-ZbyJpXYNiffkxdavBi_36aOinehQdHOtcg3kXpPX7yowHGGBEv7Idb93MBJjXUoayFKDsWeFo2vz0B_O_1h8jUn0ygGXvOVoMwcxMIP" />
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Hyperscale Ready</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter text-slate-100 mb-8">
+                    BUILD THE <br /><span class="text-primary">FUTURE</span> OF INFRASTRUCTURE
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-xl leading-relaxed">
+                    Enterprise-grade construction management for the world's most demanding digital environments. Where
+                    architectural precision meets mission-critical reliability.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact"
+                        class="bg-primary hover:bg-primary/90 text-background-dark px-8 py-4 rounded-lg text-base font-bold transition-all flex items-center gap-2 group shadow-xl shadow-primary/25 cursor-pointer">
+                        Talk to an Expert
+                        <span
+                            class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                    <a href="#expertise"
+                        class="bg-slate-800/50 hover:bg-slate-800 text-slate-100 border border-slate-700 px-8 py-4 rounded-lg text-base font-bold transition-all cursor-pointer hover:border-slate-500">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#services"
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50 hover:opacity-100 transition-opacity cursor-pointer">
+            <span class="material-symbols-outlined text-3xl">expand_more</span>
+        </a>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-background-dark relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em] mb-4">Core Competencies</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-slate-100">Specialized Mission Critical Services</h3>
+                </div>
+                <p class="text-slate-400 max-w-xs text-sm border-l border-primary/30 pl-6">
+                    Harnessing decades of engineering expertise to deliver zero-downtime infrastructure.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-xl group hover:border-primary/50 transition-all duration-500">
+                    <div
+                        class="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+                        <span class="material-symbols-outlined text-3xl">dns</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-100 mb-4">Data Center Construction</h4>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Turnkey construction for high-density, scalable environments. We manage everything from
+                        site-prep to complex mechanical cooling systems.
+                    </p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 group/link" href="#">
+                        Learn More <span
+                            class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">trending_flat</span>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-xl group hover:border-primary/50 transition-all duration-500">
+                    <div
+                        class="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+                        <span class="material-symbols-outlined text-3xl">architecture</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-100 mb-4">Infrastructure Planning</h4>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Strategic foresight for complex digital grids. Our pre-construction planning ensures maximum
+                        power efficiency and future-proof scalability.
+                    </p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 group/link" href="#">
+                        Learn More <span
+                            class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">trending_flat</span>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-xl group hover:border-primary/50 transition-all duration-500">
+                    <div
+                        class="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+                        <span class="material-symbols-outlined text-3xl">assignment_turned_in</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-100 mb-4">Project Management</h4>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Authoritative oversight from ribbon-cutting to lifecycle management. Proprietary tech-driven
+                        tracking for schedule and budget precision.
+                    </p>
+                    <a class="text-primary text-sm font-bold flex items-center gap-2 group/link" href="#">
+                        Learn More <span
+                            class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">trending_flat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trust Section (Map & Logos) -->
+    <section id="expertise" class="py-24 bg-accent-dark/30 border-y border-primary/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Nationwide Operational Reach</h2>
+            <p class="text-slate-400 mb-16 max-w-2xl mx-auto">Strategic deployment capabilities across all major US data
+                center hubs, including Northern Virginia, Dallas, and Silicon Valley.</p>
+            <div
+                class="relative w-full aspect-[21/9] rounded-2xl overflow-hidden mb-20 bg-background-dark shadow-2xl shadow-primary/5 border border-primary/10">
+                <img alt="Tech styled map with glowing nodes"
+                    class="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+                    data-alt="Digital blue tech map showing network connections across the United States"
+                    data-location="USA"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPxLxs14xNGIMr_mBMYbZINRPUlAIJT0nkvXl_ka9sftiEBzQUXzqREW7eYVTjssJR29yFA1tBSJ-wc3_LBDD4TCW3TnnfyLgsf8zLmX0R3tOV-3QDd0qmtEqiWrtvGUbyezY618EpkWNLPFB2PfY1JHdbG2z7cARLtTL8DKgaCx6zESzF37r_esmXYSwh_MWlIGQpHB4yrAXHOzSOnnU3zNwG2jILB8rYQQEOSmK4IGYOhVoXtHek18r1k9Wua0Pi0Oq-OFMb9vZh" />
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent">
+                </div>
+                <!-- Mock Map Nodes -->
+                <div
+                    class="absolute top-[40%] left-[20%] size-3 bg-primary rounded-full shadow-[0_0_15px_rgba(13,185,242,0.8)]">
+                </div>
+                <div
+                    class="absolute top-[60%] left-[45%] size-3 bg-primary rounded-full shadow-[0_0_15px_rgba(13,185,242,0.8)]">
+                </div>
+                <div
+                    class="absolute top-[35%] left-[85%] size-4 bg-primary rounded-full shadow-[0_0_20px_rgba(13,185,242,1)] animate-pulse">
+                </div>
+                <div
+                    class="absolute top-[75%] left-[75%] size-3 bg-primary rounded-full shadow-[0_0_15px_rgba(13,185,242,0.8)]">
+                </div>
+            </div>
+            <div
+                class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <img alt="Client Logo" class="h-8 mx-auto" data-alt="Monochrome corporate certification logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA13fq0rUR56SaF10CG_ji2FwNlu2_2G9XUT8ZOEs-aUt_vLkKz1hiQqzQ0TvDldHE2_2q6yNud8hhQFxd1NpqpuMli6T2w0V8l0c198O7SA2VcaWA4v2Ohg8c11_oZOLD4JYTMXnufrRVkXmBKF1HEHzf6escI6K20hn82l90K7R8-_SbB8iiY-QsFVL31QE7rG0bZAIdcQqMNUOqaHo7neQ1MbTADRcHRMIoZE2wqru6-IzRYue-OBMRHz8dOVcgAONw56SFuM4D5" />
+                <img alt="Client Logo" class="h-8 mx-auto" data-alt="Monochrome corporate certification logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN5SM2DLDt4ZaVPhv3ZC7GDAl_jkmgvyk8OKLVaTn-LMzzBcjLqWgx4QXc1RkrrLs9__V-yh7uAai0aMdvkGX3lM8y67uxwJwknLaac4VbMnGNtpuhz-gCfiI83LHB3ps4gdU-QPwbQhQ7TVkxcT0sfB90TcRp_lSiTUZCJ1S3JCZxHE1hkdtlXlowS3pD_E-JYGwx-5HDie3TwUadc6D1JUjYxvg-s9-WXqDdWuQAa5VT7jziJbq89PHylnSqh9lLDRlCnBSnC5_Q" />
+                <img alt="Client Logo" class="h-8 mx-auto" data-alt="Monochrome corporate certification logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB8z1g7U2YVKV56SfcT7TIHLGKo-719C8crxSJjM3e1Ggwlt9t1ChfohFR7bwJtC8Zxefz-r4h2GbP4Y816FNW6X50TfP_o8HRB5h8Xv1UKGC6-eUCwlhnqUky0-q7DE296BAAbwb_IMYXvK623d5GtppDVjkD1EoW_bDLwSaHzvgBNy4-sCPa0hFLH6094UJwqeN5F3I3ehokerBH8ZAEMUiRJZBDMNHfLdCCqpp8t7HsSSKelMdyXotIDW48Vz7jDob9-LcbZKbR" />
+                <img alt="Client Logo" class="h-8 mx-auto" data-alt="Monochrome corporate certification logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK5j0lxel7x5e39aDz1S9ndadlhJ0clWlMML8BXnK732OizLfg1FJSWa1IRlz4xU_H6H5yIPzLu_i9Z-TIm0EQqTg6UkB0qHHGyNbj5PWrE7_Pwd5cSyS-asCmbdsmpr3vvFku2g3ZTqkbY8hD2KsNrOMHAe_3yyXYjLByyWSZXA8SJWzjCsHpKVoGWIwS8Ruwry5Voe33fodlIADWCHa5MQoczVUYfSjysa3OpwoxpomVHMkl9ta7O4n2I-kJUettbGTOu1tifUP_" />
+                <img alt="Client Logo" class="h-8 mx-auto" data-alt="Monochrome corporate certification logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDA8xB3HqDKOv4Vo40nKB_7Dy3zZ55q7W3JPZFJSvrQNlzzcJ-wgF0QEUEH1c0HYdv-ps5aJEjD3zxQjOPy3rusLWs03C_Lqczr0rmBXcQ1_dkp_YYoUJJv64KOlXvGiVV6gbIZW3obnS8CgNuDeU23Sn6iZA7VNX5d-x_DpsYvKpem8UXNhlQ7MlDYSGPeyicFgLtJ2uCIWWmjhD-fbRPJdW92jfVv5UCnZn0zckGCSBQmoYCMibuaBEcPEAn56qjH35CNuGPxgG" />
+            </div>
+        </div>
+    </section>
+    <!-- Lead Capture Section -->
+    <section id="contact" class="py-24 bg-background-dark overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black text-slate-100 mb-6 tracking-tight">Ready to build the
+                        <span class="text-primary italic">impossible?</span></h2>
+                    <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+                        Connect with our engineering specialists today to discuss your next hyperscale project. We
+                        provide initial feasibility studies and technical site evaluations.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span
+                                class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">verified</span>
+                            <div>
+                                <h5 class="text-slate-100 font-bold">Fast Response Time</h5>
+                                <p class="text-slate-500 text-sm">Consultation response within 12 business hours.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span
+                                class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">security</span>
+                            <div>
+                                <h5 class="text-slate-100 font-bold">Enterprise Security</h5>
+                                <p class="text-slate-500 text-sm">All communications and project data are encrypted.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-accent-dark/50 border border-slate-800 p-10 rounded-2xl shadow-2xl">
+                    <form action="#" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-background-dark border-slate-700 rounded-lg focus:border-primary focus:ring-primary text-slate-100 placeholder:text-slate-600"
+                                    placeholder="John Doe" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-xs font-bold uppercase tracking-widest text-slate-500">Company</label>
+                                <input
+                                    class="w-full bg-background-dark border-slate-700 rounded-lg focus:border-primary focus:ring-primary text-slate-100 placeholder:text-slate-600"
+                                    placeholder="Tech Global Inc." type="text" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Email
+                                Address</label>
+                            <input
+                                class="w-full bg-background-dark border-slate-700 rounded-lg focus:border-primary focus:ring-primary text-slate-100 placeholder:text-slate-600"
+                                placeholder="john@company.com" type="email" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Project
+                                Details</label>
+                            <textarea
+                                class="w-full bg-background-dark border-slate-700 rounded-lg focus:border-primary focus:ring-primary text-slate-100 placeholder:text-slate-600"
+                                placeholder="Tell us about your mission critical needs..." rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-primary hover:bg-primary/90 text-background-dark py-4 rounded-lg font-black uppercase tracking-widest transition-all shadow-lg shadow-primary/20"
+                            type="submit">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary/50">
+                        <svg class="size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-bold text-slate-500 uppercase tracking-widest">Nexus Mission Critical ©
+                        2024</span>
+                </div>
+                <div class="flex gap-8 text-slate-500 text-sm">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
