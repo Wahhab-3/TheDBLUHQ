@@ -24,9 +24,9 @@ Two modes:
 |---|---------|------|----------|
 | 1 | [[NeverMisleads]] | Founder / Operator | 🔴 Revenue Priority |
 | 2 | [[DBLU]] | Artist / Brand Builder | 🟠 Identity Priority |
-| 3 | [[Creative Spaces]] | Co-Founder (equity) | 🟡 Long-term |
-| 4 | Full Sail | Student | 🟢 Ongoing |
-| 5 | [[The Global Ikon]] | Co-Founder | ⚪ On hold |
+| 3 | [[CreativeSpaces]] | Co-Founder (equity) | 🟡 Long-term |
+| 4 | [[School]] | Student | 🟢 Ongoing |
+| 5 | [[TheGlobalIkon]] | Co-Founder | ⚪ On hold |
 
 ---
 
@@ -52,8 +52,12 @@ Two modes:
 
 ## Quick Links
 
-- [[01-NeverMisleads/NeverMisleads]] — Agency HQ
-- [[02-DBLU/DBLU]] — Artist brand HQ
-- [[03-CreativeSpaces/CreativeSpaces]] — Startup HQ
-- [[04-School/School]] — Full Sail
-- [[_Inbox/]] — Capture zone
+- [[NeverMisleads]] — Agency HQ
+- [[DBLU]] — Artist brand HQ
+- [[CreativeSpaces]] — Startup HQ
+- [[School]] — Full Sail
+- [[TheGlobalIkon]] — Music competition (on hold)
+- [[Inbox]] — Quick capture zone
+- [[Queue]] — Actionable items waiting
+- [[Resources]] — Shared frameworks and tools
+- [[Personal]] — Life outside the ventures

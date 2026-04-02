@@ -1,15 +1,16 @@
 # NeverMisleads — Agency HQ
 
-> Marketing agency for local SMBs. Websites + ads that actually work.
+> Marketing agency for local SMBs. Websites + ads that actually work. [[Wahhab]]'s #1 revenue priority.
 
 ---
 
 ## What It Is
 
-NeverMisleads is Wahhab's marketing agency targeting local small-to-medium businesses (SMBs). Core offer: professional websites and ad campaigns that generate real leads. No fluff, no misleading metrics.
+NeverMisleads is [[Wahhab]]'s marketing agency targeting local small-to-medium businesses (SMBs). Core offer: professional websites and ad campaigns that generate real leads. No fluff, no misleading metrics.
 
+**Pricing:** $149 – $399/mo tiers
 **MRR Target:** $3,000/mo
-**Current MRR:** [Update]
+**Current MRR:** $— (update as clients close)
 **Priority:** 🔴 #1 Revenue Priority
 
 ---
@@ -18,31 +19,41 @@ NeverMisleads is Wahhab's marketing agency targeting local small-to-medium busin
 
 | Client | Service | Status | MRR |
 |--------|---------|--------|-----|
-| [[Clients/luxx-barbershop/Luxx]] | Website + maintenance | Active | $— |
-| [[Clients/nexus-mission-critical/Nexus]] | Website | Active | $— |
+| [[Luxx]] | Website + maintenance | Active | $— |
+| [[Nexus]] | Website | Active | $— |
 
 ---
 
 ## Pipeline
 
-→ See [[Leads/]] for active prospects
+→ Track active prospects in the `Leads/` folder
 
 ---
 
 ## Key Docs
 
-- [[SOPs/NeverMisleads-Sales-Playbook]] — Full sales process
-- [[SOPs/NeverMisleads-LinkedIn-Outreach-System]] — Outreach system
-- [[SOPs/00_agency_architecture]] — How the agency is structured
-- [[SOPs/04_client_onboarding]] — Onboarding process
-- [[Sales/]] — Scripts, outreach, ad copy
-- [[Finance/]] — MRR tracking, invoices
+- [[NeverMisleads-Sales-Playbook]] — Full sales process and scripts
+
+---
+
+## Sub-sections
+
+- `Clients/` — Individual client profiles and project notes
+- `Sales/` — Scripts, outreach, ad copy
+- `SOPs/` — Standard operating procedures (add as created)
+- `Leads/` — Active prospects and pipeline tracking
+- `Finance/` — MRR tracking, invoices
 
 ---
 
 ## Responsibilities
 
 - [ ] Close new clients → $3k MRR
-- [ ] Maintain active client sites
+- [ ] Maintain active client sites ([[Luxx]], [[Nexus]])
 - [ ] Run lead gen campaigns
 - [ ] Monthly client reporting
+- [ ] Build out SOPs as processes stabilize
+
+---
+
+Back to [[Wahhab]]
